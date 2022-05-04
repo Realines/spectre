@@ -26,13 +26,7 @@
                 <div class="header__right">
                     <div class="header__right-inner">
                         <div class="nav">
-                            <div class="nav__item nav-dropdown">
-                                <div class="nav-dropdown-show"><span>Услуги</span></div>
-                                <div class="nav-dropdown-hidden">
-                                    {% for service in services %}
-                                    <a href="{% url 'service' service.pk %}">{{ service }}</a> {% endfor %}
-                                </div>
-                            </div>
+                            <a href="{% url 'index' %}" class="nav__item">Главная</a>
                             <a href="{% url 'about' %}" class="nav__item">О нас</a>
                             <a href="{% url 'contacts' %}" class="nav__item">Контакты</a>
                         </div>
